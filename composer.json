@@ -1,0 +1,35 @@
+{
+    "name": "shamaseen/laravel-analytics",
+    "description": "Get your website traffic/conversion analytics natively from Laravel WITHOUT using Google analytic or any third party.",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "shamaseen",
+            "email": "m.shamaseen@outlook.com"
+        }
+    ],
+    "keywords": [
+        "laravel-analytics",
+        "analytics",
+        "shamaseen",
+        "visitors"
+    ],
+    "minimum-stability" : "stable",
+    "require": {
+        "illuminate/support": ">6",
+        "matomo/device-detector": "^4.3",
+        "nesbot/carbon": "^2.53.0"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Shamaseen\\Analytics\\ServiceProvider"
+            ]
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Shamaseen\\Analytics\\": "src/"
+        }
+    }
+}
